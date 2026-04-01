@@ -1,0 +1,73 @@
+# 独立本地 Git 仓库（源码 / 语言包，仅本机版本管理，不随父仓库上传 GitHub）
+_code/
+_lang/
+
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+dist-ssr/
+*.local
+
+# Vite
+.vite/
+
+# VuePress（若使用）
+.vuepress/dist
+
+# 本地环境变量（勿提交密钥）
+.env
+.env.*
+!.env.example
+
+# 日志与调试
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器 / IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 系统文件
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Cypress E2E 跑测产物（体积大、不应入库）
+cypress/videos/
+cypress/screenshots/
+**/cypress/videos/
+**/cypress/screenshots/
+
+# 可选：生产构建 Source Map（约几十 MB，仅调试用；若用 Sentry 等外丢地图可取消下一行注释）
+# *.map
+
+# 测试与覆盖率
+coverage/
+.nyc_output/
+
+# 缓存与临时文件
+.cache/
+.temp/
+.tmp/
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# 可选：包管理器锁文件（团队若统一用一种包管理器，可删掉对应行）
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../_code"
+		},
+		{
+			"path": "../_lang"
+		}
+	],
+	"settings": {}
+}
